@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "Utils.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -6,6 +7,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property int maxDoors;
 @property int minDoors;
+@property int score;
+
+@property Utils* utils;
 
 -(instancetype) init: (int) minDoors
             maxDoors: (int) maxDoors;
