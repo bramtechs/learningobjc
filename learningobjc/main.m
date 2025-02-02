@@ -1,16 +1,11 @@
-//
-//  main.m
-//  learningobjc
-//
-//  Created by Bram on 02/02/2025.
-//
-
 #import <Foundation/Foundation.h>
+#include "Ghosts.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Ghosts* ghosts = [[Ghosts alloc] initWithDefaults];
+        
+        [ghosts play];
     }
     return 0;
 }
